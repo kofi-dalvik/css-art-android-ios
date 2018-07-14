@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background: #134165;
+    overflow: hidden;
+}
+
+.container{
+    width: 30%;
+    height: 60%;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+.android-body{
+    width: 230px;
+    height: 200px;
+    background: #9FC438;
+    position: absolute;
+    bottom: 100px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    left: 200px;
+    &::after{
+        content: "";
+        width: 50px;
+        height: 80px;
+        background: #9FC438;
+        position: absolute;
+        bottom: -80px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        left: 35px;
+        box-shadow: 115px 0px 0 0 #9FC438;
+    }
+    &::before{
+        content: "";
+        width: 50px;
+        height: 140px;
+        background: #9FC438;
+        position: absolute;
+        right: -50px;
+        border-radius: 40px;
+        transform: rotate(-30deg) translateX(-5px);
+        transform-origin: 50% 0%;
+    }
+}
+
+.android-head{
+    width: 230px;
+    height: 100px;
+    background: #9FC438;
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    transform: rotate(40deg);
+    transform-origin: 100% 100%;
+    &::after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: #134165;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        box-shadow: 85px 0 0 0 #134165, -105px 140px 0 13px #134165;
+    }
+}
+
+.android-antenna{
+    width: 8px;
+    height: 40px;
+    background: #9FC438;
+    border-radius: 10px;
+    position: absolute;
+    left: 350px;
+    top: 65px;
+    &::after{
+        content: "";
+        width: 8px;
+        height: 40px;
+        background: #9FC438;
+        border-radius: 10px;
+        position: absolute;
+        left: 80px;
+        top: 65px;
+        transform: rotate(60deg);
+        transform-origin: 50% 100%;
+    }
+}
+.apple{
+    background: white;
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 65px;
+    box-shadow: 40px 0 0 0 white, 20px -50px 0 -26px white;
+    transform: rotate(10deg);
+    &::after{
+        content: "";
+        width: 50px;
+        height: 140px;
+        background: #9FC438;
+        z-index: 2;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        border: 7px solid #134165;
+        border-radius: 40px;
+        transform: rotate(-60deg);
+    }
+}
